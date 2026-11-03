@@ -1,0 +1,46 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.step-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+}
+
+.step-btn.plus {
+  border-color: var(--surface-2);
+  background: var(--surface-2);
+}
+
+.step-btn:active:not(:disabled) {
+  transform: scale(0.92);
+}
+
+.step-btn:disabled {
+  opacity: 0.35;
+}
+
+.step-value {
+  min-width: 68px;
+  height: 44px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  text-align: center;
+}
+
+.step-value:disabled {
+  opacity: 1;
+  cursor: default;
+}

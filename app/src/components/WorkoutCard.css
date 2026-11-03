@@ -1,0 +1,121 @@
+.wcard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 16px 12px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 180ms ease;
+  -webkit-touch-callout: none;
+}
+
+.wcard.dragging {
+  transition: none;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+  border-color: var(--gold);
+}
+
+.wcard-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.wcard-open {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 2px 0;
+  border: none;
+  background: none;
+  text-align: left;
+}
+
+.wcard-name {
+  font-size: 21px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-wrap: anywhere;
+}
+
+.wcard-star {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.wcard-detail {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wcard-bar {
+  display: flex;
+  gap: 3px;
+  height: 8px;
+  margin-right: 6px;
+}
+
+.wcard-bar span {
+  border-radius: 3px;
+  min-width: 2px;
+}
+
+.wcard-bottom {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 4px;
+}
+
+.wcard-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wcard-time {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.wcard-intervals {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.play-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  border: none;
+  background: var(--gold);
+  color: var(--on-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play-btn:active {
+  transform: scale(0.94);
+}

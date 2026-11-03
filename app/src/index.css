@@ -1,0 +1,75 @@
+:root {
+  --ink: #0f0d0a;
+  --surface: #1c1813;
+  --surface-2: #2a241b;
+  --line: #2e271f;
+  --line-strong: #3a3127;
+  --cream: #f4ebd6;
+  --muted: #b5a890;
+  --gold: #d9b45a;
+  --gold-hi: #f0d58c;
+  --on-gold: #1a1408;
+
+  --work-bg: #e0b04a;
+  --work-fg: #1a1408;
+  --work-muted: #4a3a17;
+  --rest-bg: #1e3a55;
+  --rest-fg: #f4ebd6;
+  --rest-muted: #b9cce0;
+  --rest-accent: #8db4d6;
+  --prep-bg: #2a2419;
+  --prep-fg: #f4ebd6;
+  --prep-muted: #b5a890;
+
+  --font-display: 'Fraunces Variable', Georgia, serif;
+  --font-ui: 'Manrope Variable', system-ui, -apple-system, sans-serif;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  color-scheme: dark;
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  overscroll-behavior: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.display {
+  font-family: var(--font-display);
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}

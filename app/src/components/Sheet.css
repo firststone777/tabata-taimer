@@ -1,0 +1,110 @@
+.sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: flex-end;
+  animation: fade-in 160ms ease-out;
+}
+
+.sheet {
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border-top: 1px solid var(--line-strong);
+  border-radius: 24px 24px 0 0;
+  padding: 8px 16px calc(var(--safe-bottom) + 16px);
+  animation: slide-up 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.sheet-grip {
+  width: 40px;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--line-strong);
+  margin: 4px auto 12px;
+}
+
+.sheet-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.sheet-actions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sheet-action {
+  width: 100%;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 8px;
+  border: none;
+  border-bottom: 1px solid var(--surface-2);
+  background: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.sheet-actions li:last-child .sheet-action {
+  border-bottom: none;
+}
+
+.sheet-action svg {
+  color: var(--gold);
+}
+
+.sheet-action.danger,
+.sheet-action.danger svg {
+  color: #f08a7a;
+}
+
+.sheet-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.btn {
+  flex: 1;
+  min-height: 52px;
+  border-radius: 16px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn.primary {
+  border: none;
+  background: var(--gold);
+  color: var(--on-gold);
+}
+
+.btn.danger {
+  border: none;
+  background: #c4523f;
+  color: #fff;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+}

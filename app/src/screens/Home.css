@@ -1,0 +1,156 @@
+.home {
+  padding-bottom: 96px;
+}
+
+.home-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.home-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+}
+
+.home-title {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.ai {
+  color: var(--gold);
+}
+
+.home-sub {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0 14px;
+}
+
+.chip {
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 18px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chip.on {
+  border-color: var(--surface-2);
+  background: var(--surface-2);
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.wlist {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hint {
+  margin: 4px 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.empty {
+  margin-top: 22vh;
+  text-align: center;
+}
+
+.empty-title {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.empty-text {
+  margin: 0;
+  color: var(--muted);
+}
+
+.fab {
+  position: fixed;
+  right: 20px;
+  bottom: calc(var(--safe-bottom) + 84px);
+  height: 56px;
+  padding: 0 22px 0 18px;
+  border-radius: 28px;
+  border: none;
+  background: var(--cream);
+  color: var(--on-gold);
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  z-index: 10;
+}
+
+.notes-input {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--line-strong);
+  background: var(--ink);
+  color: var(--cream);
+  padding: 12px 14px;
+  font: inherit;
+  /* 16px evita lo zoom automatico di iOS sul campo */
+  font-size: 16px;
+  resize: none;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.confirm-text {
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--safe-bottom) + 152px);
+  transform: translateX(-50%);
+  background: var(--cream);
+  color: var(--on-gold);
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  z-index: 60;
+  animation: fade-in 160ms ease-out;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.storage-warn {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: #3a2418;
+  color: #f3c9a8;
+  font-size: 13px;
+}
